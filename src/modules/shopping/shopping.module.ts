@@ -7,7 +7,19 @@ import { RecommendationsModule } from './recommendations/recommendations.module'
 import { Module } from '@nestjs/common';
 
 @Module({
-  imports: [CartModule, WishlistModule, ViewsHistoryModule, CompareModule, RecommendationsModule],
-  exports: [CartModule, WishlistModule, ViewsHistoryModule, CompareModule, RecommendationsModule],
+  imports: [
+    CartModule,
+    WishlistModule,
+    ViewsHistoryModule,
+    CompareModule,
+    RecommendationsModule,
+  ],
+  exports: [
+    CartModule,
+    WishlistModule,
+    ViewsHistoryModule,
+    CompareModule,
+    RecommendationsModule,
+  ],
 })
 export class ShoppingModule {}

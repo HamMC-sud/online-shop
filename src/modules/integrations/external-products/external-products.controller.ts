@@ -3,5 +3,7 @@ import { ExternalProductsService } from './external-products.service';
 
 @Controller('integrations/external-products')
 export class ExternalProductsController {
-  constructor(private readonly externalproductsService: ExternalProductsService) {}
+  constructor(
+    private readonly externalproductsService: ExternalProductsService,
+  ) {}
 }

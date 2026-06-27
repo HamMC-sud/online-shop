@@ -9,7 +9,23 @@ import { ModerationModule } from './moderation/moderation.module';
 import { Module } from '@nestjs/common';
 
 @Module({
-  imports: [CategoriesModule, BrandsModule, ProductsModule, VariantsModule, MediaModule, AttributesModule, ModerationModule],
-  exports: [CategoriesModule, BrandsModule, ProductsModule, VariantsModule, MediaModule, AttributesModule, ModerationModule],
+  imports: [
+    CategoriesModule,
+    BrandsModule,
+    ProductsModule,
+    VariantsModule,
+    MediaModule,
+    AttributesModule,
+    ModerationModule,
+  ],
+  exports: [
+    CategoriesModule,
+    BrandsModule,
+    ProductsModule,
+    VariantsModule,
+    MediaModule,
+    AttributesModule,
+    ModerationModule,
+  ],
 })
 export class CatalogModule {}

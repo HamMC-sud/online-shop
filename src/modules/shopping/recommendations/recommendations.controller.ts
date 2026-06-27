@@ -3,5 +3,7 @@ import { RecommendationsService } from './recommendations.service';
 
 @Controller('shopping/recommendations')
 export class RecommendationsController {
-  constructor(private readonly recommendationsService: RecommendationsService) {}
+  constructor(
+    private readonly recommendationsService: RecommendationsService,
+  ) {}
 }

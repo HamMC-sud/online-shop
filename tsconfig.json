@@ -4,11 +4,16 @@
     "target": "ES2023",
     "outDir": "./dist",
     "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "sourceMap": true,
     "declaration": true,
     "removeComments": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "incremental": true,
     "types": ["node"]
